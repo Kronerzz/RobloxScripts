@@ -111,7 +111,7 @@ end
 
 if env._bt_godmode and not env._bt_loaded then
     env._bt_loaded = true
-    notif("Loaded!", "Block Tales Godmode by @IDKWHATUSERNAME | Enjoy :3", 4)
+    notif("Loaded!", "Block Tales Godmode by @Kronerzz on github | Enjoy :3", 4)
     task.wait(1)
 end
 
@@ -122,7 +122,7 @@ end
 if env._bt_godmode then
     local newMove = movesFolder.ChildAdded:Connect(handleMove)
     table.insert(env._bt_conns, newMove)
-    notif("God Mode", "Enabled! Enemy damage is 0.", 5)
+    notif("God Mode", "Enabled! Enemy damage is 0. (re-execute to disable)", 5)
 else
     notif("God Mode", "Disabled! Original damage is back.", 5)
     table.clear(env._bt_orig)
